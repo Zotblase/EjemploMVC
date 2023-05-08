@@ -1,5 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
+import java.util.ArrayList;
+
 import javax.swing.JOptionPane;
 
 public class Interfaz extends Frame {
@@ -79,7 +81,7 @@ public class Interfaz extends Frame {
 
         botonMostrar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                var temp = Modelo.getInstaceModelo();
+                ArrayList<User> temp = Modelo.getInstaceModelo();
                 for (int i = 0; i < temp.size(); i++) {
 
                     String nombre = temp.get(i).getNombre();
